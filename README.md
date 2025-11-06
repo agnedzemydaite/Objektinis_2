@@ -175,6 +175,94 @@ Abejose versijose lyginant 1 ir 2 strategiją, gavome, kad 1 veikė žymiai grei
 Lyginant <em>vector</em> ir <em>list</em> konteirių spartą, matome, kad visose strategijose <em>vector</em> veikė gan greičiau nei <em>list</em>.
 </p>
 
+### Struktūros ir klasės spartos palyginimas
+
+Buvo naudojama programa su _vector_ konteineriu.
+
+### _Struct_ versija
+
+<table>
+  <tr>
+    <th>Įrašų sk</th>
+    <th></th>
+    <th>O1</th>
+    <th>O2</th>
+    <th>O3</th>
+  </tr>
+  
+  <!-- Pirmas blokas -->
+  <tr>
+    <td rowspan="5">100000</td>
+    <td>Nuskaitymas</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rūšiavimas</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Išvedimas</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Bendras laikas</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Failo dydis</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <!-- Antras blokas -->
+  <tr>
+    <td rowspan="5">1000000</td>
+    <td>Nuskaitymas</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rūšiavimas</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Išvedimas</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Bendras laikas</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Failo dydis</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+
+
+### _Class_ versija
+
+### Išvados
+
 ## Įdiegimo instrukcija (Linux ir MacOS)
 
 #### Reikalavimai
