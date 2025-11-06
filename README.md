@@ -179,6 +179,80 @@ Lyginant <em>vector</em> ir <em>list</em> konteirių spartą, matome, kad visose
 
 Buvo naudojama programa su _vector_ konteineriu.
 
+### _Class_ versija
+
+<table>
+  <tr>
+    <th>Įrašų sk</th>
+    <th></th>
+    <th>O1</th>
+    <th>O2</th>
+    <th>O3</th>
+  </tr>
+  
+  <!-- Pirmas blokas (įrašai) -->
+  <tr>
+    <td rowspan="4">100 000</td>
+    <td>Nuskaitymas</td>
+    <td>0.058 s</td>
+    <td>0.058 s</td>
+    <td>0.057 s</td>
+  </tr>
+  <tr>
+    <td>Rūšiavimas</td>
+    <td> 0.013 s</td>
+    <td> 0.011 s </td>
+    <td> 0.012 s</td>
+  </tr>
+  <tr>
+    <td>Išvedimas</td>
+    <td> 0.055 s </td>
+    <td> 0.055 s </td>
+    <td> 0.051 s </td>
+  </tr>
+  <tr>
+    <td><b>Bendras laikas</b></td>
+    <td> <b>0.126 s</b> </td>
+    <td> <b>0.124 s</b> </td>
+    <td><b> 0.12 s</b> </td>
+  </tr>
+
+  <!-- Antras blokas (įrašai) -->
+  <tr>
+    <td rowspan="4">1 000 000</td>
+    <td>Nuskaitymas</td>
+    <td> 0.552 s </td>
+    <td> 0.568 s </td>
+    <td> 0.57 s </td>
+  </tr>
+  <tr>
+    <td>Rūšiavimas</td>
+    <td> 0.06 s </td>
+    <td> 0.061 s </td>
+    <td> 0.059 s </td>
+  </tr>
+  <tr>
+    <td>Išvedimas</td>
+    <td> 0.474 s </td>
+    <td> 0.465 s </td>
+    <td> 0.468 s</td>
+  </tr>
+  <tr>
+    <td><b>Bendras laikas</b></td>
+    <td> <b> 1.086 s  </b></td>
+    <td> <b> 1.093 s </b></td>
+    <td><b> 1.096 s </b></td>
+  </tr>
+  <!-- Failo dydis atskirai -->
+  <tr>
+    <td></td>
+    <td>Failo dydis</td>
+    <td> 149 KB </td>
+    <td> 148 KB </td>
+    <td> 181 KB </td>
+  </tr>
+</table>
+
 ### _Struct_ versija
 
 <table>
@@ -190,78 +264,72 @@ Buvo naudojama programa su _vector_ konteineriu.
     <th>O3</th>
   </tr>
   
-  <!-- Pirmas blokas -->
+  <!-- Pirmas blokas (įrašai) -->
   <tr>
-    <td rowspan="5">100000</td>
+    <td rowspan="4">100 000</td>
     <td>Nuskaitymas</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>0.049 s</td>
+    <td>0.048 s</td>
+    <td>0.048 s</td>
   </tr>
   <tr>
     <td>Rūšiavimas</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td> 0.005 s</td>
+    <td> 0.005 s </td>
+    <td> 0.005 s</td>
   </tr>
   <tr>
     <td>Išvedimas</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td> 0.058 s </td>
+    <td> 0.061 s </td>
+    <td> 0.055 s </td>
   </tr>
   <tr>
-    <td>Bendras laikas</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><b>Bendras laikas</b></td>
+    <td> <b>  0.113 s </b> </td>
+    <td> <b> 0.115 s </b></td>
+    <td> <b>0.108 s</b> </td>
   </tr>
+
+  <!-- Antras blokas (įrašai) -->
   <tr>
-    <td>Failo dydis</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  
-  <!-- Antras blokas -->
-  <tr>
-    <td rowspan="5">1000000</td>
+    <td rowspan="4">1 000 000</td>
     <td>Nuskaitymas</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td> 0.485 s </td>
+    <td> 0.473 s </td>
+    <td> 0.469 s </td>
   </tr>
   <tr>
     <td>Rūšiavimas</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td> 0.03 s </td>
+    <td> 0.028 s </td>
+    <td> 0.28 s </td>
   </tr>
   <tr>
     <td>Išvedimas</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td> 0.498 s </td>
+    <td> 0.498 s </td>
+    <td> 0.494 s </td>
   </tr>
   <tr>
-    <td>Bendras laikas</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><b>Bendras laikas</b></td>
+    <td> <b> 1.012 s </b> </td>
+    <td> <b>  0.999 s </b> </td>
+    <td> <b> 0.99 s </b> </td>
   </tr>
+  <!-- Failo dydis atskirai -->
   <tr>
+    <td></td>
     <td>Failo dydis</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td> 163 KB </td>
+    <td> 162 KB </td>
+    <td> 178 KB </td>
   </tr>
 </table>
 
-
-
-### _Class_ versija
-
 ### Išvados
+
+Programa su _struct_ veikia siek tiek greiciau nei su _class_, tačiau žymaus skirtumo nėra. Taip pat nedaug skiriasi ir flag'ų greičiai. Su _vector_ matome, kad flag'ų greičiai O1 > O2 > O3, tačiau tokio stabilumo negalima pamatyti su _class_.
 
 ## Įdiegimo instrukcija (Linux ir MacOS)
 
