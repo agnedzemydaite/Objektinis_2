@@ -31,6 +31,39 @@ Apskaičiuoti pateiktų studentų galutinį įvertinimą, pagal nurodytą formul
 - Relizuota "Rule of Three".
 - Pritaikyti perdengti įvesties ir išvesties metodai.
 
+### Perdengti metodai
+- ### Įvesties operatorius `operator >>`
+
+Vartojas gali įvesti studento duomenis naudodamas `cin >> studentas` arba `fin >> studentas`
+
+Prieš naudojant operatorių galima nustatyti įvesties rėžimą: įvestis rankiniu būdu ar įvestis sugeneruojama (automtiškai parinkta rankinis įvedimas)
+- rankinis būdas: `ivestis = ivestis_rezimas::rankinis;`
+- generavimas: `ivestis = ivestis_rezimas::generuojamas;`
+
+Vartotojui reikės sukurti failą su duomenimis arba juos įvesti:
+- vardą
+- pavardę
+- n.d. skaičių
+- pažymius
+- egzamino pažymį
+  
+(jei duomenys generuojama pakaks įvesti vardą ir pavardę).
+
+- ### Išvesties operatorius `operator <<`
+
+Vartotojas gali išvesti duomenis naudodamas `cout << studentas`arba `fout << studentas`
+
+Prieš naudojant operatorių galima nustatyti išvesties rėžimą: išveda galutinį balą apskaičiuotą pagal vidurkį, medianą arba abu (automatiškai parinkta abu)
+- vidurkis: `isvestis = isvesties_rezimas::vidurkis;`
+- mediana: `isvestis = isvesties_rezimas::mediana;`
+- abu: `isvestis = isvesties_rezimas::abu;`
+
+Atspausdinami duomenys
+- vardas
+- pavardė
+- galutinis rezultatas
+
+
 ## Išsamus naujausios versijos veikimo principas
 ### Vartotojas gali pasirinkti, ar nori generuoti studentų duomenų failus:
 
@@ -39,7 +72,7 @@ Apskaičiuoti pateiktų studentų galutinį įvertinimą, pagal nurodytą formul
 <b>Pasirinktus 2 variantą:</b>
 <p>Programa sugeneruoja 5 atsitiktinius studentų sąrašų failus, sudarytus iš: 1 000, 10 000, 100 000, 1 000 000, 10 000 000 įrašų.</p>
 
-###Vartotojas gali pasirinkti, ar nori ištestuoti _Rule of Three_:
+### Vartotojas gali pasirinkti, ar nori ištestuoti _Rule of Three_:
 <img src="nuotraukos/rule_of_three.png" alt="Rule of Three" width="400"/>
 
 <b>Pasirinkus 1 variantą:</b>
