@@ -19,12 +19,17 @@ using std::fixed;
 using std::setprecision;
 
 using std::cerr;
+using std::ifstream;
+using std::ofstream;
 
+//Operatoriu rezimai
 ivestis_rezimas ivestis = ivestis_rezimas::rankinis;
 isvesties_rezimas isvestis = isvesties_rezimas::abu;
 
 //Operatoriai
 istream& operator>>(istream& is, studentas& s){
+    s.paz_.clear();
+    s.suma_ = 0;
     bool pasirinkimas1 = (ivestis == ivestis_rezimas::generuojamas);
     bool pasirinkimas2 = (&is == &cin && ivestis == ivestis_rezimas::rankinis);
     
@@ -297,3 +302,32 @@ void studentas::mediana(){
     }
 }
 
+//Rule of three
+void rule_of_three(){
+    studentas s1;
+    studentas s2;
+    cout << "Iveskite vieno studento duomenis: " << endl;
+    cin >> s1;
+    ifstream fin("stud.txt");
+    fin >> s2;
+    fin.close();
+    ofstream fout("Rule_of_Three.txt");
+    
+    fout << setw(3) << left << "Nr" << setw(16) << left << "Vieta atmintyje"<< setw(15) << left << "Vardas" << setw(20) << left << "Pavarde" << setw(17) << left << "Galutinis (Vid.)" << setw(17) << left << "Galutinis (Med.)"  <<endl;
+    fout  <<setw(3) << left << "s1" << setw(16) << left << &s1 << s1;
+    fout << setw(3) << left << "s2" << setw(16) << left << &s2 << s2;
+
+    fout << endl << "Pakeiciame studenta s2 i s1 (s2 = s1)." << endl;
+    s2 = s1;
+    fout << setw(3) << left << "Nr" << setw(16) << left << "Vieta atmintyje"<< setw(15) << left << "Vardas" << setw(20) << left << "Pavarde" << setw(17) << left << "Galutinis (Vid.)" << setw(17) << left << "Galutinis (Med.)"  <<endl;
+    fout  <<setw(3) << left << "s1" << setw(16) << left << &s1 << s1;
+    fout << setw(3) << left << "s2" << setw(16) << left << &s2 << s2;
+    
+    fout << endl << "Sukuriam nauja studenta s3 is s1  (s3(s1))." << endl;
+    studentas s3(s1);
+    fout << setw(3) << left << "Nr" << setw(16) << left << "Vieta atmintyje"<< setw(15) << left << "Vardas" << setw(20) << left << "Pavarde" << setw(17) << left << "Galutinis (Vid.)" << setw(17) << left << "Galutinis (Med.)"  <<endl;
+    fout  <<setw(3) << left << "s1" << setw(16) << left << &s1 << s1;
+    fout << setw(3) << left << "s3" << setw(16) << left << &s3 << s3;
+    fout.close();
+    cout << "Testo rezultatai ivesti i faila 'Rule_of_Three'" << endl;
+}

@@ -5,6 +5,7 @@
 #include <chrono>
 #include <random>
 #include <iomanip>
+#include <fstream>
 
 using std::string;
 using std::vector;
@@ -73,7 +74,7 @@ public:
           gal_med_(kitas.gal_med_),
           n_(kitas.n_),
           suma_(kitas.suma_){}
-    //III. Copy Assignmnent
+    //III. Copy Assignment
     studentas& operator=(const studentas& kitas) {
         studentas temp(kitas);
         std::swap(var_, temp.var_);
@@ -93,3 +94,5 @@ extern ivestis_rezimas ivestis;
 
 enum class isvesties_rezimas {vidurkis, mediana, abu};
 extern isvesties_rezimas isvestis;
+
+void rule_of_three();

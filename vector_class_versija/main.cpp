@@ -45,6 +45,18 @@ int main(){
             laikas.push_back(duration);
         }
     }
+    //Rule of three
+    pasirinkimas = 0;
+    cout << "--------------------------------------------------------" << endl;
+    cout << "---------- Ar norite istestuoti Rule of Three ----------" << endl;
+    cout << "--------------------------------------------------------" << endl;
+    cout << "1. Taip." << endl;
+    cout << "2. Ne." << endl;
+    cout << "--------------------------------------------------------" << endl;
+    cout << endl << "Iveskite savo pasirinkima: ";
+    pasirinkimas = pasirink_iv(1, 2);
+    if(pasirinkimas == 1) rule_of_three();
+    cin.ignore();
     
     //Pagrindinis meniu
     pasirinkimas = 0;
