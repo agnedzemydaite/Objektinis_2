@@ -47,7 +47,7 @@ Vartotojui reikės sukurti failą su duomenimis arba juos įvesti:
 - pažymius
 - egzamino pažymį
   
-(jei duomenys generuojama pakaks įvesti vardą ir pavardę).
+(jei duomenys generuojami pakaks įvesti vardą ir pavardę).
 
 - ### Išvesties operatorius `operator <<`
 
