@@ -391,7 +391,7 @@ Programa su _struct_ veikia siek tiek greiciau nei su _class_, tačiau žymaus s
 - Įsitikinti, kad kompiuteryje turite C++ kompiliatorių, cmake, make ir git, jei neturite - įsidiekite.
 - Atsidarykite komandinę eilutę (terminalą) savo kompiuteryje ir įveskite šias komandas:
   -  `git clone -b v1.2 https://github.com/agnedzemydaite/Objektinis_2.git`
-  -  `cd Objektinis_programavimas_pratybos`
+  -  `cd Objektinis_2`
 - Sukurkite katalogą, kuriame bus generuojami "build" failai:
   - `mkdir build`
   - `cd build`
