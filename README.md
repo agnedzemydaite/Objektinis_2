@@ -23,13 +23,24 @@ Apskaičiuoti pateiktų studentų galutinį įvertinimą, pagal nurodytą formul
 - Pridėtos dvi papildomos studentų rūšiavimo į dvi gropes strategijos.
 - Atlikta studentų rūšiavimo spartos analizė.
 
-## Išsamus galutinės versijos veikimo principas
+### Versija 1.1 - patobulinta 1.0 versija:
+- Sukurta nauja vector versija, kur _struct_ pakeista į _class_.
+- Atlikta struktūrų analizė.
+
+### Versija 1.2 - patobulinta 1.1 versija:
+- Relizuota "Rule of Three".
+- Pritaikyti perdengti įvesties ir išvesties metodai.
+
+## Išsamus naujausios versijos veikimo principas
 ### Vartotojas gali pasirinkti, ar nori generuoti studentų duomenų failus:
 
 <img src="nuotraukos/failu_generavimas.png" alt="Failų generavimo pasirinkimas" width="400"/>
 
 <b>Pasirinktus 2 variantą:</b>
 <p>Programa sugeneruoja 5 atsitiktinius studentų sąrašų failus, sudarytus iš: 1 000, 10 000, 100 000, 1 000 000, 10 000 000 įrašų.</p>
+
+###Vartotojas gali pasirinkti, ar nori ištestuoti _Rule of Three_:
+<img src="nuotraukos/rule_of_three.png" alt="Rule of Three" width="400"/>
 
 ### Vartotojas gali pasirinkti, kaip įvesti studentų duomenis:
 
@@ -342,7 +353,7 @@ Programa su _struct_ veikia siek tiek greiciau nei su _class_, tačiau žymaus s
 #### Programos įdiegimo žingsniai:
 - Įsitikinti, kad kompiuteryje turite C++ kompiliatorių, cmake, make ir git, jei neturite - įsidiekite.
 - Atsidarykite komandinę eilutę (terminalą) savo kompiuteryje ir įveskite šias komandas:
-  -  `git clone -b v1.1 https://github.com/agnedzemydaite/Objektinis_2.git`
+  -  `git clone -b v1.2 https://github.com/agnedzemydaite/Objektinis_2.git`
   -  `cd Objektinis_programavimas_pratybos`
 - Sukurkite katalogą, kuriame bus generuojami "build" failai:
   - `mkdir build`
