@@ -31,6 +31,52 @@ Apskaičiuoti pateiktų studentų galutinį įvertinimą, pagal nurodytą formul
 - Relizuota "Rule of Three".
 - Pritaikyti perdengti įvesties ir išvesties metodai.
 
+### Rule of Three
+#### Destruktorius
+```bash
+~studentas() {
+        var_.clear();
+        pav_.clear();
+        paz_.clear();
+        gal_vid_ = 0.0;
+        gal_med_ = 0.0;
+        egz_ = 0;
+        n_ = 0;
+        suma_ = 0;
+}
+```
+#### Kopijavimo konstruktorius
+```bash
+      studentas(const studentas& kitas)
+        : var_(kitas.var_),
+          pav_(kitas.pav_),
+          paz_(kitas.paz_),
+          egz_(kitas.egz_),
+          gal_vid_(kitas.gal_vid_),
+          gal_med_(kitas.gal_med_),
+          n_(kitas.n_),
+          suma_(kitas.suma_){}
+```
+
+#### Priskyrimo operatorius (copy assignment)
+```bash
+      studentas& operator=(const studentas& kitas) {
+        studentas temp(kitas);
+        if (this == &kitas) {
+            return *this;
+        }
+        std::swap(var_, temp.var_);
+        std::swap(pav_, temp.pav_);
+        std::swap(paz_, temp.paz_);
+        std::swap(egz_, temp.egz_);
+        std::swap(gal_vid_, temp.gal_vid_);
+        std::swap(gal_med_, temp.gal_med_);
+        std::swap(n_, temp.n_);
+        std::swap(suma_, temp.suma_);
+        return *this;
+    }
+```
+
 ### Perdengti metodai
 - ### Įvesties operatorius `operator >>`
 
@@ -77,6 +123,7 @@ Atspausdinami duomenys
 
 <b>Pasirinkus 1 variantą:</b>
 <p>Sukuriamas tekstinis failas, kur parodoma, kaip pasikeitė studentai: </p>
+<img src="nuotraukos/rule_of_three_file.png" alt="Rule of Three" width="400"/>
 
 ### Vartotojas gali pasirinkti, kaip įvesti studentų duomenis:
 
