@@ -76,6 +76,42 @@ Apskaičiuoti pateiktų studentų galutinį įvertinimą, pagal nurodytą formul
         return *this;
     }
 ```
+### Versija 1.5 - patobulinta 1.5 versija:
+- Sukurta bazinė (abstrakti) klasė _žmogus_.
+- Klasė _studentas_ kuriama iš bazinės klasės _žmogus_.
+
+#### Klasė _žmogus_
+
+```bash
+class zmogus{
+protected:
+    string var_;
+    string pav_;
+    
+public:
+    zmogus(): var_(""), pav_("") {}
+    zmogus(const string& vardas, const string& pavarde): var_(vardas), pav_(pavarde) {}
+    
+    virtual string vardas() const = 0;
+    virtual string pavarde() const = 0;
+    
+    //Destruktorius
+    virtual ~zmogus() {
+            var_.clear();
+            pav_.clear();
+    }
+    
+};
+```
+#### Klasė _studentas_
+
+```bash
+class studentas: public zmogus{...)
+```
+
+#### Sukurtos bazinės klasės _žmogus_ objektų kūrimas (`zmogus z`) yra negalimas:
+
+<img src="nuotraukos/klaida.png" alt="Rule of Three" width="200"/>
 
 ### Perdengti metodai
 - ### Įvesties operatorius `operator >>`
@@ -436,7 +472,7 @@ Programa su _struct_ veikia siek tiek greiciau nei su _class_, tačiau žymaus s
 #### Programos įdiegimo žingsniai:
 - Įsitikinti, kad kompiuteryje turite C++ kompiliatorių, cmake, make ir git, jei neturite - įsidiekite.
 - Atsidarykite komandinę eilutę (terminalą) savo kompiuteryje ir įveskite šias komandas:
-  -  `git clone -b v1.2 https://github.com/agnedzemydaite/Objektinis_2.git`
+  -  `git clone -b v1.5 https://github.com/agnedzemydaite/Objektinis_2.git`
   -  `cd Objektinis_2`
 - Sukurkite katalogą, kuriame bus generuojami "build" failai:
   - `mkdir build`
