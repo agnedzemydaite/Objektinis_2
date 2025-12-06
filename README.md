@@ -109,7 +109,7 @@ Atspausdinami duomenys
 - pavardė
 - galutinis rezultatas
 
-### Versija 1.5 - patobulinta 1.5 versija:
+### Versija 1.5 - patobulinta 1.2 versija:
 - Sukurta bazinė (abstrakti) klasė _žmogus_.
 - Klasė _studentas_ kuriama iš bazinės klasės _žmogus_.
 
@@ -148,6 +148,29 @@ class studentas: public zmogus{...)
 
 taip pat galima patikrinti su komanda `is_abstract<zmogus>::value`.
 
+### Versija 2.0 - patobulinta 1.5 versija:
+- Sukurta dokumentacija naudojant _Doxygen_.
+- Realizuoti Unit Testai naudojant _Google Tests_.
+
+#### Doxygen dokumentacija
+<img src="nuotraukos/dokumentacija.png" alt="Doxygen dokumentacija" width="400"/>
+
+#### Unit Testai
+Unit testai iškarpa:
+```bash
+TEST(SkaiciavimoTestai, GalutnisVidurkis) {
+    studentas s;
+    s.setPaz({8, 10});
+    s.setEgz(10);
+    s.setSuma(18.0);
+    s.setN(2.0);
+    s.vidurkis();
+    EXPECT_NEAR(s.gal_vid(), 9.6, 1e-6);
+}
+```
+
+Paleidus testus gauname rezultatą:
+<img src="nuotraukos/testai.png" alt="Unit testų rezultatas" width="400"/>
 
 ## Išsamus naujausios versijos veikimo principas
 ### Vartotojas gali pasirinkti, ar nori generuoti studentų duomenų failus:
