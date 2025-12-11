@@ -1,4 +1,4 @@
-#### [**Nuoroda į versiją 2.0**](#Versija-2.0-patobulinta-1.5-versija:)
+#### [**Nuoroda į versiją 2.0**](#Versija-2.0---patobulinta-1.5-versija:)
 
 # Studentų galutinio įvertinimo skaičiavimo programa
 ## Programos tikslas
