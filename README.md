@@ -1,4 +1,4 @@
-#### [**Nuoroda į versiją 2.0**](#Versija-2.0---patobulinta-1.5-versija:)
+#### [**Nuoroda į versiją 2.0**](#versija-20---patobulinta-15-versija)
 
 # Studentų galutinio įvertinimo skaičiavimo programa
 ## Programos tikslas
@@ -525,8 +525,7 @@ Programa su _struct_ veikia siek tiek greiciau nei su _class_, tačiau žymaus s
 ## Naudojimo instrukcija
 
 Norėdami sužinoti, kaip veikia programa, kokius veiksmus galima atlikti ir kokie pasirinkimai galimi,
-peržiūrėkite skyrių [**Išsamus galutinės versijos veikimo principas**](#išsamus-galutinės-versijos-veikimo-principas)
-
+peržiūrėkite skyrių [**Išsamus galutinės versijos veikimo principas**](##išsamus-naujausios-versijos-veikimo-principas)
 
 
 Trumpai:
