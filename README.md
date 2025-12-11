@@ -154,6 +154,8 @@ taip pat galima patikrinti su komanda `is_abstract<zmogus>::value`.
 
 #### Doxygen dokumentacija
 <img src="nuotraukos/dokumentacija.png" alt="Doxygen dokumentacija" width="400"/>
+<a href="https://agnedzemydaite.github.io/Objektinis_2/" target="_blank">Doxygen dokumentacija</a>
+
 
 #### Unit Testai
 Unit testai iškarpa:
