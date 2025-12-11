@@ -1,3 +1,5 @@
+#### [**Nuoroda į versiją 2.0**](#Versija-2.0-patobulinta-1.5-versija:)
+
 # Studentų galutinio įvertinimo skaičiavimo programa
 ## Programos tikslas
 Apskaičiuoti pateiktų studentų galutinį įvertinimą, pagal nurodytą formulę:
@@ -172,6 +174,7 @@ TEST(SkaiciavimoTestai, GalutnisVidurkis) {
 ```
 
 Paleidus testus gauname rezultatą:
+
 <img src="nuotraukos/testai.png" alt="Unit testų rezultatas" width="400"/>
 
 ## Išsamus naujausios versijos veikimo principas
